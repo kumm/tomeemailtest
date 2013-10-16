@@ -7,5 +7,5 @@ The source code does not cointain any valid google smtp account, you have to pro
 The place to fill a smtps account:
 WEB-INF/resources.xml
 
-You have to provide a valid from and to email address in SendServlet.java too.
+You have to provide a valid to email address in SendServlet.java too.
 

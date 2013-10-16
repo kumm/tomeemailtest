@@ -45,6 +45,7 @@ public class SendServlet extends HttpServlet {
         try {
             out.println("<h1>Servlet SendServlet at " + request.getContextPath() + "</h1>");
             MimeMessage message = new MimeMessage(mailSession);
+            message.setFrom(new InternetAddress("anybody@gmail.hu"));
             message.addRecipient(Message.RecipientType.TO, new InternetAddress("anybody@gmail.com"));
             message.setSubject("This is the Subject Line!");
             message.setText("This is actual message");

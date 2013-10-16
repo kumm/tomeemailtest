@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <Resource id="mail/trial" type="javax.mail.Session">
+        mail.transport.protocol=smtps
+        mail.smtps.host=smtp.gmail.com
+        mail.smtps.port=465
+        mail.smtps.auth=true
+        mail.smtps.user=anybody@gmail.com
+        mail.smtps.password=_a_password_
+        mail.debug=true
+    </Resource>
+    
+ 
+</resources>

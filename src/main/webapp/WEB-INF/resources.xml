@@ -2,11 +2,14 @@
 <resources>
 
     <Resource id="mail/trial" type="javax.mail.Session">
-        mail.transport.protocol=smtps
-        mail.smtps.host=smtp.gmail.com
-        mail.smtps.port=465
-        mail.smtps.auth=true
-        mail.smtps.user=anybody@gmail.com
+        mail.transport.protocol=smtp
+        mail.smtp.socketFactory.class=javax.net.ssl.SSLSocketFactory
+        mail.smtp.socketFactory.fallback=false
+        mail.smtp.host=smtp.gmail.com
+        mail.smtp.port=465
+        mail.smtp.auth=true
+        mail.smtp.user=anybody@gmail.com
+        mail.from=anybody@gmail.com
         password=_a_password_
         mail.debug=true
     </Resource>
